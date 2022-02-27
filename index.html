@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PWA Workshop</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="description" content="This is an example of a meta description for pwa example.">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="PWA Workshop" />
+    <meta name="apple-mobile-web-app-title" content="PWA Workshop" />
+    <meta name="msapplication-starturl" content="/index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>PWA Workshop</h1>
+      <p>An introduction workshop to Progressive Web Applications</p>
+    </header>
+
+
+    <section id="attendees">
+      <h1>Attendees</h1>
+      <p>Loading the attendees list...</p>
+    </section>
+
+    <section id="register">
+      <h1 class="row">Register</h1>
+      <div class="flex">
+        <form action="" class="col">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <div class="actions">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+
+        <p class="col status"></p>
+      </div>
+    </section>
+
+    <a onclick="registerNotification()">Notify me when there are new attendees</a>
+
+    <footer>
+      <p>
+        Learn the pwa topics.
+      </p>
+      <button id="install_button">Install PWA</button>
+    </footer>
+  </body>
+</html>
